@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e723efe0-4f71-4e60-8ad0-c90d08404013" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/liyuanshuo/beanfactory/MyBeanFactoryPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/liyuanshuo/ioc/ActorArrangable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/liyuanshuo/ioc/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/liyuanshuo/ioc/GeLi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/liyuanshuo/ioc/LiuDeHua.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/liyuanshuo/ioc/MoAttack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liyuanshuo/fileResources/EncodedResourceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liyuanshuo/fileResources/FileSourceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liyuanshuo/reflect/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/liyuanshuo/reflect/PrivateCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/encodedfile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,36 +48,72 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1615" />
-          <entry key="txt" value="10" />
+          <entry key="java" value="1879" />
+          <entry key="txt" value="19" />
           <entry key="xml" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1615" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="JAVA" value="1879" />
+          <entry key="PLAIN_TEXT" value="19" />
           <entry key="XML" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="18" />
+          <entry key="java" value="22" />
+          <entry key="txt" value="4" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="18" />
+          <entry key="JAVA" value="22" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/liyuanshuo/fileResources/EncodedResourceExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="19" column="72" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/liyuanshuo/fileResources/FileSourceExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/encodedfile.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="47" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -116,6 +151,11 @@
         <option value="$PROJECT_DIR$/src/main/java/liyuanshuo/ioc/ActorArrangable.java" />
         <option value="$PROJECT_DIR$/src/main/java/liyuanshuo/ioc/MoAttack.java" />
         <option value="$PROJECT_DIR$/src/main/java/liyuanshuo/ioc/Director.java" />
+        <option value="$PROJECT_DIR$/src/main/java/liyuanshuo/reflect/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/liyuanshuo/reflect/PrivateCar.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/encodedfile.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/liyuanshuo/fileResources/EncodedResourceExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/liyuanshuo/fileResources/FileSourceExample.java" />
       </list>
     </option>
   </component>
@@ -217,7 +257,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="liyuanshuo" type="462c0819:PsiDirectoryNode" />
-              <item name="ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="fileResources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chapter4" type="b2602c69:ProjectViewProjectNode" />
@@ -243,7 +283,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545066977040" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545067984076" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/liyuanshuo/beanFactory" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -272,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AnnotationApplicationContext">
+  <component name="RunManager" selected="Application.FileSourceExample">
     <configuration name="AnnotationApplicationContext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="liyuanshuo.context.AnnotationApplicationContext" />
       <module name="chapter4" />
@@ -299,12 +339,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EncodedResourceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="liyuanshuo.fileResources.EncodedResourceExample" />
+      <module name="chapter4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="liyuanshuo.fileResources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileSourceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="liyuanshuo.fileResources.FileSourceExample" />
+      <module name="chapter4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="liyuanshuo.fileResources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.BeanLifeCycle" />
       <item itemvalue="Application.AnnotationApplicationContext" />
+      <item itemvalue="Application.EncodedResourceExample" />
+      <item itemvalue="Application.FileSourceExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FileSourceExample" />
+        <item itemvalue="Application.EncodedResourceExample" />
         <item itemvalue="Application.AnnotationApplicationContext" />
         <item itemvalue="Application.BeanLifeCycle" />
       </list>
@@ -323,7 +393,7 @@
       <workItem from="1544857244355" duration="4734000" />
       <workItem from="1545055548326" duration="5331000" />
       <workItem from="1545063382149" duration="1948000" />
-      <workItem from="1545066319353" duration="657000" />
+      <workItem from="1545066319353" duration="1662000" />
     </task>
     <task id="LOCAL-00001" summary="尝试提交">
       <created>1545066409842</created>
@@ -332,16 +402,24 @@
       <option name="project" value="LOCAL" />
       <updated>1545066409842</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ioc提交">
+      <created>1545067000704</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1545067000704</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12670000" />
+    <option name="totallyTimeSpent" value="13675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24731903" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24731903" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -350,7 +428,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32968536" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32968536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -381,7 +459,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="尝试提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="尝试提交" />
+    <MESSAGE value="ioc提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="ioc提交" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -552,6 +631,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/liyuanshuo/reflect/PrivateCar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/liyuanshuo/reflect/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-267">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/liyuanshuo/fileResources/EncodedResourceExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="19" column="72" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/encodedfile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="47" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/liyuanshuo/fileResources/FileSourceExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
