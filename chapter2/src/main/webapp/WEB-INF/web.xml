@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<!--从类的路径下加载spring的配置文件，classpath关键字特指类的路径下加载，
+	    建议以后统一使用classpath关键字，不要使用绝对路径-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:liyuanshuo-context.xml</param-value>
+    </context-param>
+
+    <!--负责启动spring容器的监听器,它将引用上面的上下文参数获得spring的配置文件的地址-->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <!--配置spring MVC的主控servlet-->
+    <servlet>
+        <servlet-name>liyuanshuo</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+    <!--spring MVC处理的URL-->
+    <servlet-mapping>
+        <servlet-name>liyuanshuo</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+</web-app>
