@@ -26,14 +26,6 @@ public class LogonService implements BeanNameAware {
     @Qualifier("userDao")
     private UserDao userDao;
 
-    public void setLogDao(LogDao logDao) {
-        this.logDao = logDao;
-    }
-
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
-    }
-
     public void saveLog(){
         logDao.saveLog();
     }
