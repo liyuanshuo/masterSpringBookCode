@@ -22,17 +22,14 @@ public class LogonService implements BeanNameAware {
     @Autowired(required = false)
     private LogDao logDao;
 
-    @Lazy
+    @Autowired
     @Qualifier("userDao")
     private UserDao userDao;
 
-    @Autowired
     public void setLogDao(LogDao logDao) {
         this.logDao = logDao;
     }
 
-    @Autowired
-    @Qualifier("userDao")
     public void setUserDao(UserDao userDao) {
         this.userDao = userDao;
     }
