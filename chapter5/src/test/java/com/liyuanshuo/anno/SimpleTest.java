@@ -13,7 +13,7 @@ import org.springframework.util.Assert;
 public class SimpleTest {
 
     public static void main(String[] args) throws Throwable{
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("com.liyuanshuo.anno/beans.xml");
         LogonService logonService = ctx.getBean(LogonService.class);
         Assert.notNull(logonService, "logonService null ?");
         logonService.saveLog();

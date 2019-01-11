@@ -15,7 +15,7 @@ import static org.testng.AssertJUnit.assertNotNull;
  */
 public class AnnoAutowireTest {
     public ApplicationContext factory = null;
-    private static String[] CONFIG_FILES = {"beans.xml"};
+    private static String[] CONFIG_FILES = {"com.liyuanshuo.anno/beans.xml"};
 
     @BeforeMethod
     public void setUp(){
