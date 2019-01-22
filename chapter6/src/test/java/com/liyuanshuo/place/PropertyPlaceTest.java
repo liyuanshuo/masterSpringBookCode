@@ -16,7 +16,7 @@ import static org.testng.Assert.assertNotNull;
  */
 public class PropertyPlaceTest {
 
-    public ApplicationContext ctx = null;
+    private ApplicationContext ctx = null;
 
     private static String[] CONFIG_FILES = { "com/liyuanshuo/place/beans.xml" };
 
