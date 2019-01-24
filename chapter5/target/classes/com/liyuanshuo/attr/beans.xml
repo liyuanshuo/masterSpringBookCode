@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="car" class="com.liyuanshuo.attr.Car" lazy-init="default">
+        <property name="brand" value="红旗"/>
+        <property name="maxSpeed" value="200"/>
+        <property name="price" value="20000.00"/>
+    </bean>
+
+    <bean id="parentBoss" abstract="true" class="com.liyuanshuo.attr.Boss">
+        <property name="favorites">
+            <set>
+                <value>BossFavorites001</value>
+                <value>BossFavorites002</value>
+                <value>BossFavorites003</value>
+                <value>BossFavorites004</value>
+                <value>BossFavorites005</value>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="childBoss" parent="parentBoss">
+        <property name="favorites">
+            <set>
+                <value>ChildBossFavorites001</value>
+                <value>ChildBossFavorites002</value>
+                <value>ChildBossFavorites003</value>
+            </set>
+        </property>
+    </bean>
+
+    <!--下面开始引用Bean-->
+    <bean id="boss1" class="com.liyuanshuo.attr.Boss">
+        <property name="car" ref="car"/>
+        <property name="favorites">
+            <set>
+                <value>Boss01Favorites001</value>
+                <value>Boss01Favorites002</value>
+                <value>Boss01Favorites003</value>
+                <value>Boss01Favorites004</value>
+                <value>Boss01Favorites005</value>
+            </set>
+        </property>
+        <property name="jobs">
+            <map>
+                <entry key="AM" value="ThingsToDoInAM"/>
+                <entry key="PM" value="ThingsToDOInPM"/>
+                <entry key="Night" value="ThingsTODoInNight"/>
+            </map>
+        </property>
+        <property name="mails">
+            <props>
+                <prop key="jobMail">jonh_office_mail@areyouok.com</prop>
+                <prop key="lifeMail">john_life_mail@xiaomi.com</prop>
+            </props>
+        </property>
+        <property name="jobTime">
+            <map>
+                <entry key="会见客户" value="123456"/>
+                <entry key="会见经理" value="456789"/>
+                <entry key="去厕所" value="6666666"/>
+            </map>
+        </property>
+    </bean>
+
+    <!--再来一个Bean-->
+    <bean id="boss2" class="com.liyuanshuo.attr.Boss">
+        <property name="car">
+            <bean class="com.liyuanshuo.attr.Car">
+                <property name="maxSpeed" value="200"/>
+                <property name="price" value="20000.00"/>
+                <property name="brand" value="红旗"/>
+            </bean>
+        </property>
+    </bean>
+
+
+
+    <bean id="sportsCar" class="com.liyuanshuo.attr.SportsCar">
+        <property name="brand" ref="car.brand"/>
+    </bean>
+    <bean class="org.springframework.beans.factory.config.PropertyPathFactoryBean" id="car.brand"/>
+
+    <bean id="brand" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetObject" ref="car"/>
+        <property name="targetMethod" value="getBrand"/>
+    </bean>
+
+    <!--<bean id="myField" class="org.springframework.beans.factory.config.FieldRetrievingFactoryBean">-->
+        <!--<property name="staticField" value="com.liyuanshuo.attr.Car.HONG_QI"/>-->
+        <!--<property name="targetObject" ref="car"/>-->
+        <!--<property name="targetField" ref="brand"/>-->
+    <!--</bean>-->
+
+    <bean id="foo" class="com.liyuanshuo.attr.Foo">
+        <property name="IDCode" value="789456123000"/>
+    </bean>
+
+</beans>
