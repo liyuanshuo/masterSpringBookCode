@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="greetingBefore" class="com.cqu.advice.GreetingBeforeAdvice"/>
+    <bean id="greetingAfter" class="com.cqu.advice.GreetingAfterAdvice"/>
+    <bean id="greetingAdvice" class="com.cqu.advice.GreetingBeforeAdvice"/>
+    <bean id="greetingAround" class="com.cqu.advice.GreetingInterceptor"/>
+    <bean id="target" class="com.cqu.advice.NaiveWaiter"/>
+
+    <!--1. greetingAdvice-->
+    <!--<bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"-->
+          <!--p:proxyInterfaces="com.cqu.advice.Waiter"-->
+          <!--p:target-ref="target"-->
+          <!--p:interceptorNames="greetingAdvice"/>-->
+
+    <!--2. before and after advice-->
+    <!--<bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"-->
+          <!--p:proxyInterfaces="com.cqu.advice.Waiter"-->
+          <!--p:target-ref="target"-->
+          <!--p:interceptorNames="greetingAround"/>-->
+
+
+    <!--3. around advice-->
+    <bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"
+          p:proxyInterfaces="com.cqu.advice.Waiter"
+          p:target-ref="target"
+          p:interceptorNames="greetingAround"/>
+
+    <!--4. 异常抛出增强-->
+    <bean id="forumServiceTarget" class="com.cqu.advice.ForumService"/>
+    <bean id="transactionManager" class="com.cqu.advice.TransactionManager"/>
+    <bean id="forumService" class="org.springframework.aop.framework.ProxyFactoryBean"
+          p:interceptorNames="transactionManager"
+          p:target-ref="forumServiceTarget"
+          p:proxyTargetClass="true"/>
+
+</beans>
