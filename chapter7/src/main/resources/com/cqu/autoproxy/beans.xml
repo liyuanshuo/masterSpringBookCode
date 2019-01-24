@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.cqu.aop"/>
+
+    <bean id="waiter" class="com.cqu.advisor.Waiter"/>
+    <bean id="seller" class="com.cqu.advisor.Seller"/>
+    <bean id="greetingAdvice" class="com.cqu.advisor.GreetingBeforeAdvice"/>
+
+    <!-- 通过Bean名称自动创建代理 -->
+    <!--
+        <bean
+        class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator"
+        p:beanNames="*er" p:interceptorNames="greetingAdvice"
+        p:optimize="true"/>
+    -->
+
+
+    <!--通过Advisor自动创建代理-->
+    <bean id="regexpAdvisor"
+          class="org.springframework.aop.support.RegexpMethodPointcutAdvisor"
+          p:patterns=".*greet.*" p:advice-ref="greetingAdvice"  />
+    <bean
+            class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"  p:proxyTargetClass="true" />
+
+</beans>
