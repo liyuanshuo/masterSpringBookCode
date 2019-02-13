@@ -24,7 +24,7 @@ public class CodeExprSample {
 
 
         String codeExpr = "GS-${#dim1()}-000-${#dim2()}";
-        Expression expression = parser.parseExpression(codeExpr, new TemplatedParserContext());
+        Expression expression = parser.parseExpression(codeExpr, new TemplateParserContext());
         String code =expression.getValue(context,String.class);
 
         return code;

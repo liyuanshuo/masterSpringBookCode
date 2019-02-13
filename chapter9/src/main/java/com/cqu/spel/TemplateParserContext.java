@@ -8,7 +8,7 @@ import org.springframework.expression.ParserContext;
  * @date : 2019/1/24 19:23
  * @description :  add description here
  */
-public class TemplatedParserContext implements ParserContext {
+public class TemplateParserContext implements ParserContext {
     @Override
     public boolean isTemplate() {
         return true;
