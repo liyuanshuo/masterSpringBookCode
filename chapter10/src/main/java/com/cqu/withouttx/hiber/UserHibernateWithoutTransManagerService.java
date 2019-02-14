@@ -15,13 +15,20 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * @author liyuanshuo
+ */
 @Service("hiberService")
 public class UserHibernateWithoutTransManagerService {
     
-	@Autowired
-    private HibernateTemplate hibernateTemplate;
+	private final HibernateTemplate hibernateTemplate;
 
-    public void addScore(String userName,int toAdd){
+    @Autowired
+    public UserHibernateWithoutTransManagerService(HibernateTemplate hibernateTemplate) {
+        this.hibernateTemplate = hibernateTemplate;
+    }
+
+    private void addScore(String userName, int toAdd){
         User user = hibernateTemplate.get(User.class,userName);
         user.setScore(user.getScore()+toAdd);
         //在无事务上下文的环境下，显式调用update将即时向数据库发送SQL
