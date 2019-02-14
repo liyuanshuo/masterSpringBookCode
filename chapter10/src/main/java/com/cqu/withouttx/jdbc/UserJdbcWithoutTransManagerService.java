@@ -13,12 +13,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
+/**
+ * @author liyuanshuo
+ */
 @Service("userService")
 public class UserJdbcWithoutTransManagerService {
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
-    public void addScore(String userName,int toAdd){
+    @Autowired
+    public UserJdbcWithoutTransManagerService(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
+    private void addScore(String userName, int toAdd){
         String sql = "UPDATE t_user u SET u.score = u.score + ? WHERE user_name =?";
         jdbcTemplate.update(sql,toAdd,userName);
     }
