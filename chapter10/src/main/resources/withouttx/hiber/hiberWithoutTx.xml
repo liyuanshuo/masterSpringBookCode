@@ -22,7 +22,7 @@
 
 
     <bean id="sessionFactory"
-          class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"
+          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
           p:dataSource-ref="dataSource">
         <property name="annotatedClasses">
             <list>
@@ -38,7 +38,7 @@
     </bean>
 
     <bean id="hibernateTemplate"
-          class="org.springframework.orm.hibernate3.HibernateTemplate"
+          class="org.springframework.orm.hibernate4.HibernateTemplate"
           p:sessionFactory-ref="sessionFactory"/>
           
     <context:component-scan base-package="com.cqu.withouttx.hiber"/>
