@@ -26,7 +26,6 @@ public class TestForumService extends AbstractTransactionalTestNGSpringContextTe
         forum.setForumDesc("desc");
         forum.setForumName("name");
         forumService1.addForum(forum);
-
 //		ForumService forumService = ctx.getBean(ForumService.class);
 //		System.out.println("begin...........");
 //		forumService.addTopic();
