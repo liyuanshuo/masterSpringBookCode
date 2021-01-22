@@ -12,7 +12,7 @@
         <file.encoding>UTF-8</file.encoding>
         <spring.version>4.3.18.RELEASE</spring.version>
         <groovy.version>2.4.12</groovy.version>
-        <mysql.version>8.0.13</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <dbcp.version>1.4</dbcp.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <commons-codec.version>1.9</commons-codec.version>
