@@ -20,7 +20,7 @@
         <hibernate.version>4.3.11.Final</hibernate.version>
         <java.cache.version>0.6</java.cache.version>
         <com.hazelcast.version>3.9.4</com.hazelcast.version>
-        <com.google.guava.version>27.0.1-jre</com.google.guava.version>
+        <com.google.guava.version>29.0-jre</com.google.guava.version>
         <net.sf.ehcache.version>2.8.5</net.sf.ehcache.version>
         <testng.version>6.13.1</testng.version>
         <commons-beanutils.version>1.9.2</commons-beanutils.version>
